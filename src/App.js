@@ -1,15 +1,19 @@
+import { ThemeProvider } from "styled-components";
+import { theme } from "./theme";
+import { GlobalStyle } from "./GlobalStyle";
 import { Container } from "./Container/styled";
 import Header from "./Header";
-import { GlobalStyle } from "./GlobalStyle";
 
 function App() {
   return (
-    <>
-      <GlobalStyle />
-      <Container>
-        <Header />
-      </Container>
-    </>
+    <ThemeProvider theme={theme}>
+      <>
+        <GlobalStyle />
+        <Container>
+          <Header />
+        </Container>
+      </>
+    </ThemeProvider>
   );
 }
 
