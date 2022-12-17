@@ -19,6 +19,7 @@ export const Nav = styled.nav`
 
   a {
     color: ${({theme}) => theme.colors.darkGrayishBlue};
+    font-size: 20px;
     transition: color 200ms;
     cursor: pointer;
 

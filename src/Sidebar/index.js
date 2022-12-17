@@ -3,13 +3,18 @@ import { Flex } from "../Flex/styled";
 import Article from "../Article";
 
 const Sidebar = ({ articles }) => {
-  const newArticles = articles.filter(article => article.new);
-  console.log(newArticles);
-  
+  const newArticles = articles.filter((article) => article.new);
+
   return (
     <StyledSidebar>
-        <Heading>New</Heading>
-        {newArticles.map(article => <Article title={article.title} content={article.content} />)}
+      <Heading>New</Heading>
+      {newArticles.map((article) => (
+        <Article
+          key={article.id}
+          title={article.title}
+          content={article.content}
+        />
+      ))}
     </StyledSidebar>
   );
 };

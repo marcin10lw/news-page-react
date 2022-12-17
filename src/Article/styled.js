@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledArticle = styled.article`
   border-bottom: 1px solid ${({theme}) => theme.colors.grayishBlue};
   word-break: break-all;
-  padding: 30px 0;
+  padding: 40px 0;
 
   h3 {
     font-size: 21px;
@@ -19,9 +19,9 @@ export const StyledArticle = styled.article`
 
   p {
     color: ${({theme}) => theme.colors.grayishBlue};
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
-    margin: 10px 0 0;
+    margin: 20px 0 0;
   }
 
   &:last-of-type {
