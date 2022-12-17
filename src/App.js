@@ -5,6 +5,7 @@ import { Container } from "./Container/styled";
 import Header from "./Header";
 import { Grid } from "./Grid/styled";
 import Main from "./Main";
+import Sidebar from "./Sidebar";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Header />
           <Grid>
             <Main />
+            <Sidebar />
           </Grid>
         </Container>
       </>
