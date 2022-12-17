@@ -19,11 +19,12 @@ export const Nav = styled.nav`
   }
 
   a {
-    color: grey;
+    color: ${({theme}) => theme.colors.darkGrayishBlue};
+    transition: color 200ms;
     cursor: pointer;
 
     &:hover {
-      opacity: 0.80;
+      color: ${({theme}) => theme.colors.softRed};
     }
   }
 `;
