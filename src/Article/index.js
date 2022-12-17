@@ -1,3 +1,5 @@
+import { StyledArticle } from "./styled";
+
 const Article = ({ title, content }) => (
   <StyledArticle>
     <h3>{title}</h3>
