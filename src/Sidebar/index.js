@@ -1,8 +1,11 @@
 import { StyledSidebar, Heading } from "./styled";
+import { Flex } from "../Flex/styled";
 
 const Sidebar = () => (
   <StyledSidebar>
-    <Heading>New</Heading>
+    <Flex>
+      <Heading>New</Heading>
+    </Flex>
   </StyledSidebar>
 );
 
