@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-  padding: 80px 40px 60px;
+  padding: 80px 0 60px;
   border: 1px solid red;
   display: flex;
   align-items: center;
@@ -15,7 +15,7 @@ export const Nav = styled.nav`
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
   }
 
   a {
