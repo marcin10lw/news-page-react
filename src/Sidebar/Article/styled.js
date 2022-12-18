@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledArticle = styled.article`
   border-bottom: 1px solid ${({ theme }) => theme.colors.grayishBlue};
-  word-break: break-all;
+  word-break: break-word;
   padding: 40px 0;
 
   p {
