@@ -3,7 +3,8 @@ import { Flex } from "../Flex/styled";
 
 const Main = () => (
   <StyledMain>
-    <Image src="./assets/images/image-web-3-desktop.jpg" />
+    <Image desktop src="./assets/images/image-web-3-desktop.jpg" />
+    <Image mobile src="./assets/images/image-web-3-mobile.jpg" />
     <Heading>The Bright Future of Web 3.0?</Heading>
     <Flex>
       <Content>
