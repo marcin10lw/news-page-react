@@ -21,18 +21,21 @@ const articles = [
     content:
       "What happens when old PCs are given modern upgrades?",
     new: false,
+    image: "./assets/images/image-retro-pcs.jpg",
   },
   {
     title: "Top 10 Laptops of 2022",
     content:
       "Our best picks for various needs and budgets.",
     new: false,
+    image: "./assets/images/image-top-laptops.jpg",
   },
   {
     title: "The Growth of Gaming",
     content:
       "How the pandemic has sparked fresh opportunities.",
     new: false,
+    image: "./assets/images/image-gaming-growth.jpg",
   },
 ];
 
