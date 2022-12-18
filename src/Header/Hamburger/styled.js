@@ -12,4 +12,8 @@ export const StyledHamburger = styled.div`
     height: 4px;
     background-color: black;
   }
+
+  @media (min-width: ${({theme}) => theme.mobile}px) {
+    display: none;
+  }
 `;

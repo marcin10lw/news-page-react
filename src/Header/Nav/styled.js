@@ -19,4 +19,8 @@ export const StyledNav = styled.nav`
       color: ${({theme}) => theme.colors.softRed};
     }
   }
+
+  @media (max-width: ${({theme}) => theme.mobile}px) {
+    display: none;
+  }
 `;
