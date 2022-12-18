@@ -6,6 +6,7 @@ export const StyledMenu = styled.div`
   width: 70%;
   position: absolute;
   right: 0;
+  z-index: 2;
 
   nav {
     margin-top: 180px;
@@ -30,7 +31,7 @@ export const StyledMenu = styled.div`
     showMenu &&
     css`
       animation-name: menu-show;
-      animation-duration: 300ms;
+      animation-duration: 250ms;
     `}
 
   ${({ showMenu }) =>

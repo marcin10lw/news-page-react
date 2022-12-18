@@ -8,6 +8,7 @@ import { Grid } from "./Grid/styled";
 import Main from "./Main";
 import Sidebar from "./Sidebar";
 import Footer from "./Footer";
+import { Overlay } from "./Overlay/styled";
 import articlesData from "./articlesData";
 import { nanoid } from "nanoid";
 import { useState } from "react";
@@ -31,6 +32,7 @@ function App() {
         <GlobalStyle />
         <Container>
           <Menu showMenu={showMenu} toggleShowMenu={toggleShowMenu} />
+          <Overlay showMenu={showMenu} />
           <Header showMenu={showMenu} toggleShowMenu={toggleShowMenu} />
           <Grid>
             <Main />

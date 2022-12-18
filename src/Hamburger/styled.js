@@ -9,6 +9,7 @@ const Hamburger = styled.div`
   position: absolute;
   right: 20px;
   top: 80px;
+  z-index: 2;
 
   ${({ showMenu }) =>
     showMenu &&
