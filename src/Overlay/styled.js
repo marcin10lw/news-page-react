@@ -19,7 +19,7 @@ export const Overlay = styled.div`
     showMenu &&
     css`
       animation-name: overlay-show;
-      animation-duration: 250ms;
+      animation-duration: 150ms;
     `}
 
     @keyframes overlay-show {

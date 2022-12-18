@@ -31,7 +31,7 @@ export const StyledMenu = styled.div`
     showMenu &&
     css`
       animation-name: menu-show;
-      animation-duration: 250ms;
+      animation-duration: 150ms;
     `}
 
   ${({ showMenu }) =>
