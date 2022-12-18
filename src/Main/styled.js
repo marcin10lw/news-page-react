@@ -40,6 +40,10 @@ export const Heading = styled.h1`
   font-weight: 800;
   font-size: 64px;
   margin: 0;
+
+  @media (max-width: ${({ theme }) => theme.mobile}px) {
+    font-size: 50px;
+  }
 `;
 
 export const Content = styled.p`

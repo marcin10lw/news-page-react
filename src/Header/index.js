@@ -1,11 +1,11 @@
 import { Logo, StyledHeader } from "./styled";
-import Hamburger from "./Hamburger";
 import Nav from "./Nav";
+import Hamburger from "../Hamburger/styled";
 
-const Header = () => (
+const Header = ({ toggleShowMenu, showMenu }) => (
   <StyledHeader>
     <Logo src="./assets/images/logo.svg" />
-    <Hamburger />
+    <Hamburger showMenu={showMenu} onClick={toggleShowMenu} />
     <Nav />
   </StyledHeader>
 );
