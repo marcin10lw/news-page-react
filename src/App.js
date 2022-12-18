@@ -6,6 +6,7 @@ import Header from "./Header";
 import { Grid } from "./Grid/styled";
 import Main from "./Main";
 import Sidebar from "./Sidebar";
+import Footer from "./Footer";
 import articlesData from "./articlesData";
 import { nanoid } from "nanoid";
 
@@ -22,6 +23,7 @@ function App() {
             <Main />
             <Sidebar articles={articles} />
           </Grid>
+          <Footer />
         </Container>
       </>
     </ThemeProvider>
