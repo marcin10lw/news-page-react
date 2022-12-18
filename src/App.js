@@ -23,7 +23,7 @@ function App() {
             <Main />
             <Sidebar articles={articles} />
           </Grid>
-          <Footer />
+          <Footer articles={articles} />
         </Container>
       </>
     </ThemeProvider>
