@@ -8,23 +8,3 @@ export const StyledHeader = styled.header`
 `;
 
 export const Logo = styled.img``;
-
-export const Nav = styled.nav`
-  ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-  }
-
-  a {
-    color: ${({theme}) => theme.colors.darkGrayishBlue};
-    font-size: 20px;
-    transition: color 200ms;
-    cursor: pointer;
-
-    &:hover {
-      color: ${({theme}) => theme.colors.softRed};
-    }
-  }
-`;

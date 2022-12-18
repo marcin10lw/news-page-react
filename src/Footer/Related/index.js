@@ -5,7 +5,7 @@ const Related = ({ image, number, title, content }) => (
       <Image src={image} />
     <Flex>
       <Number>0{number}</Number>
-      <Link>{title}</Link>
+      <Link href="">{title}</Link>
       <Content>{content}</Content>
     </Flex>
   </StyledRelated>

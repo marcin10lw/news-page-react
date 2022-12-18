@@ -26,7 +26,9 @@ export const Number = styled.div`
 export const Link = styled.a`
   margin: 0;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 800;
+  text-decoration: none;
+  color: black;
   cursor: pointer;
   transition: color 200ms;
 

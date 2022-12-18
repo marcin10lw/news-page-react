@@ -24,6 +24,8 @@ export const Link = styled.a`
   transition: color 200ms;
   cursor: pointer;
   margin: 0;
+  text-decoration: none;
+  font-weight: 700;
 
   &:hover {
     color: ${({ theme }) => theme.colors.softOrange};
