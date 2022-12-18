@@ -1,11 +1,13 @@
-import { StyledRelated, Image, Number, Title, Content } from "./styled";
+import { StyledRelated, Image, Number, Content, Flex, Link } from "./styled";
 
 const Related = ({ image, number, title, content }) => (
   <StyledRelated>
-    <Image src={image} />
-    <Number>{number}</Number>
-    <Title>{title}</Title>
-    <Content>{content}</Content>
+      <Image src={image} />
+    <Flex>
+      <Number>0{number}</Number>
+      <Link>{title}</Link>
+      <Content>{content}</Content>
+    </Flex>
   </StyledRelated>
 );
 

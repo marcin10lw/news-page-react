@@ -1,11 +1,42 @@
 import styled from "styled-components";
 
-export const StyledRelated = styled.div``;
+export const StyledRelated = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 30px;
+`;
 
-export const Image = styled.img``;
+export const Image = styled.img`
+  max-width: 120px;
+`;
 
-export const Number = styled.div``;
+export const Flex = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
 
-export const Title = styled.h4``;
+export const Number = styled.div`
+  font-size: 40px;
+  font-weight: 700;
+  color: ${({ theme }) => theme.colors.grayishBlue};
+`;
 
-export const Content = styled.p``;
+export const Link = styled.a`
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 200ms;
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.softRed};
+  }
+`;
+
+export const Content = styled.p`
+  margin: 0;
+  font-size: 18px;
+  color: ${({ theme }) => theme.colors.darkGrayishBlue};
+`;
