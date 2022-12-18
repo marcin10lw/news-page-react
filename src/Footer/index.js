@@ -1,5 +1,5 @@
 import { StyledFooter } from "./styled";
-import Related from "../Related";
+import Related from "./Related";
 
 const Footer = ({ articles }) => {
   const filteredArticles = articles.filter((article) => !article.new);

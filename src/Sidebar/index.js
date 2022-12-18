@@ -1,6 +1,6 @@
 import { StyledSidebar, Heading } from "./styled";
 import { Flex } from "../Flex/styled";
-import Article from "../Article";
+import Article from "./Article";
 
 const Sidebar = ({ articles }) => {
   const newArticles = articles.filter((article) => article.new);
