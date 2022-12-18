@@ -1,8 +1,8 @@
-import { StyledArticle } from "./styled";
+import { StyledArticle, Link } from "./styled";
 
 const Article = ({ title, content }) => (
   <StyledArticle>
-    <h3>{title}</h3>
+    <Link>{title}</Link>
     <p>{content}</p>
   </StyledArticle>
 );
