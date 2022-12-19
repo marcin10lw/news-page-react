@@ -7,5 +7,5 @@ export const theme = {
     softOrange: "hsl(35, 77%, 62%)",
     softRed: "hsl(5, 85%, 63%)",
   },
-  mobile: 767,
+  mobile: 913,
 };
