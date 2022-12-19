@@ -8,9 +8,6 @@ const Hamburger = styled.button`
   background-image: url("./assets/images/icon-menu.svg");
   background-repeat: no-repeat;
   background-position: center;
-  position: absolute;
-  right: 20px;
-  top: 40px;
   z-index: 2;
 
   ${({ showMenu }) =>
