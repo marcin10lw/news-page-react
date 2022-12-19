@@ -1,37 +1,44 @@
 import styled, { css } from "styled-components";
 
 export const Overlay = styled.div`
-  position: absolute;
-  top: 0;
-  bottom: 0;
+  position: fixed;
   left: 0;
   right: 0;
-  background-color: ${({ theme }) => theme.colors.veryDarkBlue};
-  opacity: 0.5;
+  height: 100vh;
+  transition: background-color 500ms;
 
   ${({ showMenu }) =>
     !showMenu &&
     css`
       visibility: hidden;
+      animation-name: overlay-hide;
+      animation-duration: 500ms;
     `}
+
+  @keyframes overlay-hide {
+    from {
+      visibility: visible;
+    }
+    to {
+      visibility: hidden;
+    }
+  }
 
   ${({ showMenu }) =>
     showMenu &&
     css`
-      animation-name: overlay-show;
-      animation-duration: 150ms;
+      background-color: #00001a80;
+      /* animation-name: overlay-show;
+      animation-duration: 400ms; */
     `}
 
-    @keyframes overlay-show {
+  /* @keyframes overlay-show {
     from {
       visibility: hidden;
+      opacity: 0;
     }
     1% {
       visibility: visible;
-      opacity: 0;
     }
-    to {
-      opacity: 0.5;
-    }
-  }
+  } */
 `;
