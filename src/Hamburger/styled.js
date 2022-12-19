@@ -8,12 +8,15 @@ const Hamburger = styled.button`
   background-image: url(${`${process.env.PUBLIC_URL}/assets/images/icon-menu.svg`});
   background-repeat: no-repeat;
   background-position: center;
-  z-index: 2;
+  transition-delay: 10ms;
+  transition-property: background-image;
+  
 
   ${({ showMenu }) =>
     showMenu &&
     css`
       background-image: url(${`${process.env.PUBLIC_URL}/assets/images/icon-menu-close.svg`});
+      z-index: 2;
     `}
 
   @media (min-width: ${({ theme }) => theme.mobile}px) {
