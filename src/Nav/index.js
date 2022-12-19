@@ -1,7 +1,7 @@
 import { StyledNav } from "./styled";
 
-const Nav = () => (
-  <StyledNav>
+const Nav = ({ menu, header }) => (
+  <StyledNav menu={menu} header={header}>
     <ul>
       <li>
         <a href="">Home</a>

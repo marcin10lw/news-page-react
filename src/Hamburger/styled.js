@@ -1,8 +1,9 @@
 import styled, { css } from "styled-components";
 
-const Hamburger = styled.div`
+const Hamburger = styled.button`
   height: 40px;
   width: 40px;
+  border: none;
   background-image: url("./assets/images/icon-menu.svg");
   background-repeat: no-repeat;
   background-position: center;

@@ -8,25 +8,6 @@ export const StyledMenu = styled.div`
   right: 0;
   z-index: 2;
 
-  nav {
-    margin-top: 180px;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  li {
-    padding: 16px 20px;
-  }
-
-  a {
-    text-decoration: none;
-    font-size: 22px;
-    color: ${({ theme }) => theme.colors.veryDarkBlue};
-  }
-
   ${({ showMenu }) =>
     showMenu &&
     css`

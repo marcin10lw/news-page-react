@@ -18,7 +18,6 @@ function App() {
 
   const toggleShowMenu = () => {
     setShowMenu((showMenu) => !showMenu);
-    console.log(showMenu);
   };
 
   const articles = articlesData.map((article) => ({
