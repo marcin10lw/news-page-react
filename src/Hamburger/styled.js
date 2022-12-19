@@ -4,12 +4,13 @@ const Hamburger = styled.button`
   height: 40px;
   width: 40px;
   border: none;
+  background-color: transparent;
   background-image: url("./assets/images/icon-menu.svg");
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
   right: 20px;
-  top: 80px;
+  top: 40px;
   z-index: 2;
 
   ${({ showMenu }) =>
