@@ -6,8 +6,7 @@ export const Grid = styled.div`
   gap: 30px;
 
   @media (max-width: ${({theme}) => theme.mobile}px) {
-    grid-template-columns: none;
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 1fr;
     gap: 50px;
   }
 `
