@@ -5,7 +5,7 @@ const Hamburger = styled.button`
   width: 40px;
   border: none;
   background-color: transparent;
-  background-image: url("./assets/images/icon-menu.svg");
+  background-image: url(${`${process.env.PUBLIC_URL}/assets/images/icon-menu.svg`});
   background-repeat: no-repeat;
   background-position: center;
   z-index: 2;
@@ -13,7 +13,7 @@ const Hamburger = styled.button`
   ${({ showMenu }) =>
     showMenu &&
     css`
-      background-image: url("./assets/images/icon-menu-close.svg");
+      background-image: url(${`${process.env.PUBLIC_URL}/assets/images/icon-menu-close.svg`});
     `}
 
   @media (min-width: ${({ theme }) => theme.mobile}px) {

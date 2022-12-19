@@ -4,7 +4,7 @@ import Hamburger from "../Hamburger/styled";
 
 const Header = ({ toggleShowMenu, showMenu }) => (
   <StyledHeader>
-    <Logo src="./assets/images/logo.svg" />
+    <Logo src={`${process.env.PUBLIC_URL}/assets/images/logo.svg`} />
     <Hamburger showMenu={showMenu} onClick={toggleShowMenu} />
     <Nav header={true} />
   </StyledHeader>
