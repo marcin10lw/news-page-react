@@ -5,6 +5,10 @@ export const StyledArticle = styled.article`
   word-break: break-word;
   padding: 40px 0;
 
+  h2 {
+    margin: 0;
+  }
+
   p {
     color: ${({ theme }) => theme.colors.grayishBlue};
     font-size: 18px;
