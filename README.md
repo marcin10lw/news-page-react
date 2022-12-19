@@ -23,11 +23,12 @@ This time I have created a news homepage layout based on one of the numerous cha
 
 ![](news-page-mobile.gif)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
- 
  ## Check the demo out!
 
-[![](news-page-link.png)]()
+[![](news-page-link.png)](https://marcin10lw.github.io/news-page-react/)
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ 
 
 ## Available Scripts
 
