@@ -12,6 +12,8 @@ export const Image = styled.img`
 
 export const Flex = styled.div`
   height: 100%;
+  max-height: 152px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
