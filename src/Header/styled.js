@@ -6,6 +6,10 @@ export const StyledHeader = styled.header`
   align-items: center;
   justify-content: space-between;
   position: relative;
+
+  @media (max-width: ${({ theme }) => theme.mobile}px) {
+    padding: 40px 0;
+  }
 `;
 
 export const Logo = styled.img``;
