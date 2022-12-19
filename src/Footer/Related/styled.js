@@ -8,12 +8,12 @@ export const StyledRelated = styled.div`
 
 export const Image = styled.img`
   max-width: 120px;
+  height: 100%;
+  object-fit: cover;
 `;
 
 export const Flex = styled.div`
   height: 100%;
-  max-height: 152px;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

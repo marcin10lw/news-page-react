@@ -16,6 +16,7 @@ export const Image = styled.img`
 
   @media (max-width: ${({ theme }) => theme.mobile}px) {
     grid-column: 1;
+    width: 100%;
   }
 
   ${({ desktop }) =>
