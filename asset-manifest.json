@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/news-page-react/static/js/main.1b1adb64.js",
+    "static/js/787.25eab3b3.chunk.js": "/news-page-react/static/js/787.25eab3b3.chunk.js",
+    "index.html": "/news-page-react/index.html",
+    "main.1b1adb64.js.map": "/news-page-react/static/js/main.1b1adb64.js.map",
+    "787.25eab3b3.chunk.js.map": "/news-page-react/static/js/787.25eab3b3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.1b1adb64.js"
+  ]
+}
