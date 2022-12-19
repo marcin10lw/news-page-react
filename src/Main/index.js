@@ -2,8 +2,8 @@ import { StyledMain, Image, Heading, Content, Button, Flex } from "./styled";
 
 const Main = () => (
   <StyledMain>
-    <Image desktop src={`${process.env.PUBLIC_URL}/assets/images/image-web-3-desktop.jpg`} />
-    <Image mobile src={`${process.env.PUBLIC_URL}/assets/images/image-web-3-mobile.jpg`} />
+    <Image desktop src={`${process.env.PUBLIC_URL}/assets/images/image-web-3-desktop.jpg`} alt="main article" />
+    <Image mobile src={`${process.env.PUBLIC_URL}/assets/images/image-web-3-mobile.jpg`} alt="main article" />
     <Heading>The Bright Future of Web 3.0?</Heading>
     <Flex>
       <Content>
