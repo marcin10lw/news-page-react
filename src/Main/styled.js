@@ -45,6 +45,13 @@ export const Heading = styled.h1`
   }
 `;
 
+export const Flex = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+`
+
 export const Content = styled.p`
   color: ${({ theme }) => theme.colors.darkGrayishBlue};
   margin: 0;

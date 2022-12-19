@@ -1,5 +1,4 @@
-import { StyledMain, Image, Heading, Content, Button } from "./styled";
-import { Flex } from "../Flex/styled";
+import { StyledMain, Image, Heading, Content, Button, Flex } from "./styled";
 
 const Main = () => (
   <StyledMain>
