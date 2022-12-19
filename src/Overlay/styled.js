@@ -28,17 +28,5 @@ export const Overlay = styled.div`
     showMenu &&
     css`
       background-color: #00001a80;
-      /* animation-name: overlay-show;
-      animation-duration: 400ms; */
     `}
-
-  /* @keyframes overlay-show {
-    from {
-      visibility: hidden;
-      opacity: 0;
-    }
-    1% {
-      visibility: visible;
-    }
-  } */
 `;
