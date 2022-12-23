@@ -28,7 +28,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <>
-        <GlobalStyle />
+        <GlobalStyle showMenu={showMenu} />
         <Container>
           <Menu showMenu={showMenu} toggleShowMenu={toggleShowMenu} />
           <Overlay showMenu={showMenu} />
