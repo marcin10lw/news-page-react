@@ -4,6 +4,7 @@ export const StyledMenu = styled.div`
   background-color: ${({ theme }) => theme.colors.offWhite};
   height: 100vh;
   position: fixed;
+  overflow: scroll;
   right: 0;
   z-index: 2;
   transition: width 200ms ease;
