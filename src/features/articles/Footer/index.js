@@ -1,7 +1,10 @@
 import { StyledFooter } from "./styled";
 import Related from "./Related";
+import { useSelector } from "react-redux";
+import { selectArticles } from "../articlesSlice";
 
-const Footer = ({ articles }) => {
+const Footer = () => {
+  const { articles } = useSelector(selectArticles);
   const filteredArticles = articles.filter((article) => !article.new);
   const relatedArticles = filteredArticles.map((article) => ({
     ...article,

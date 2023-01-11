@@ -1,4 +1,4 @@
-const articles = [
+export const articlesData = [
   {
     title: "Hydrogen VS Electric Cars",
     content: "Will hydrogen-fueled cars ever catch up to EVs?",
@@ -38,5 +38,3 @@ const articles = [
     image: `${process.env.PUBLIC_URL}/assets/images/image-gaming-growth.jpg`,
   },
 ];
-
-export default articles;

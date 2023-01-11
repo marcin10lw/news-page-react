@@ -6,33 +6,25 @@ import Main from "./common/Main";
 import Sidebar from "./features/articles/Sidebar";
 import Footer from "./features/articles/Footer";
 import { Overlay } from "./features/menu/Overlay/styled";
-import articlesData from "./articlesData";
-import { nanoid } from "nanoid";
-import { useState } from "react";
+import { useSelector } from "react-redux";
+import { selectMenu } from "./features/menu/menuSlice";
+import { GlobalStyle } from "./GlobalStyle";
 
 function App() {
-  const [showMenu, setShowMenu] = useState(false);
-
-  const toggleShowMenu = () => {
-    setShowMenu((showMenu) => !showMenu);
-  };
-
-  const articles = articlesData.map((article) => ({
-    ...article,
-    id: nanoid(),
-  }));
+  const { showMenu } = useSelector(selectMenu);
 
   return (
     <>
+      <GlobalStyle showMenu={showMenu} />
       <Container>
-        <Menu showMenu={showMenu} toggleShowMenu={toggleShowMenu} />
+        <Menu />
         <Overlay showMenu={showMenu} />
-        <Header showMenu={showMenu} toggleShowMenu={toggleShowMenu} />
+        <Header />
         <Grid>
           <Main />
-          <Sidebar articles={articles} />
+          <Sidebar />
         </Grid>
-        <Footer articles={articles} />
+        <Footer />
       </Container>
     </>
   );
