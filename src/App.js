@@ -1,14 +1,11 @@
-import { ThemeProvider } from "styled-components";
-import { theme } from "./theme";
-import { GlobalStyle } from "./GlobalStyle";
-import { Container } from "./Container/styled";
-import Header from "./Header";
-import Menu from "./Menu";
-import { Grid } from "./Grid/styled";
-import Main from "./Main";
-import Sidebar from "./Sidebar";
-import Footer from "./Footer";
-import { Overlay } from "./Overlay/styled";
+import { Container } from "./common/Container/styled";
+import Header from "./features/menu/Header";
+import Menu from "./features/menu/Menu";
+import { Grid } from "./common/Grid/styled";
+import Main from "./common/Main";
+import Sidebar from "./features/articles/Sidebar";
+import Footer from "./features/articles/Footer";
+import { Overlay } from "./features/menu/Overlay/styled";
 import articlesData from "./articlesData";
 import { nanoid } from "nanoid";
 import { useState } from "react";
@@ -26,21 +23,18 @@ function App() {
   }));
 
   return (
-    <ThemeProvider theme={theme}>
-      <>
-        <GlobalStyle showMenu={showMenu} />
-        <Container>
-          <Menu showMenu={showMenu} toggleShowMenu={toggleShowMenu} />
-          <Overlay showMenu={showMenu} />
-          <Header showMenu={showMenu} toggleShowMenu={toggleShowMenu} />
-          <Grid>
-            <Main />
-            <Sidebar articles={articles} />
-          </Grid>
-          <Footer articles={articles} />
-        </Container>
-      </>
-    </ThemeProvider>
+    <>
+      <Container>
+        <Menu showMenu={showMenu} toggleShowMenu={toggleShowMenu} />
+        <Overlay showMenu={showMenu} />
+        <Header showMenu={showMenu} toggleShowMenu={toggleShowMenu} />
+        <Grid>
+          <Main />
+          <Sidebar articles={articles} />
+        </Grid>
+        <Footer articles={articles} />
+      </Container>
+    </>
   );
 }
 

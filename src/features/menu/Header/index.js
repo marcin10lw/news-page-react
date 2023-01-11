@@ -1,6 +1,6 @@
 import { Logo, StyledHeader } from "./styled";
-import Nav from "../Nav";
-import Hamburger from "../Hamburger/styled";
+import Nav from "../../menu/Nav";
+import Hamburger from "../../menu/Hamburger/styled";
 
 const Header = ({ toggleShowMenu, showMenu }) => (
   <StyledHeader>
