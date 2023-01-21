@@ -11,8 +11,10 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: "Inter", sans-serif;
-    ${({showMenu}) => showMenu && css`
-      overflow: hidden;
-    `}
+    ${({ showMenu }) =>
+      showMenu &&
+      css`
+        overflow: hidden;
+      `}
   }
-`
+`;

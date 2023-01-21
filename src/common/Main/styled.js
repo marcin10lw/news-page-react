@@ -38,12 +38,9 @@ export const Image = styled.img`
 
 export const Heading = styled.h1`
   font-weight: 800;
-  font-size: 64px;
+  font-size: 2.625rem;
+  font-size: clamp(2.625rem, 2.12rem + 2.15vw, 4rem);
   margin: 0;
-
-  @media (max-width: ${({ theme }) => theme.mobile}px) {
-    font-size: 50px;
-  }
 `;
 
 export const Flex = styled.div`
@@ -51,20 +48,22 @@ export const Flex = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-`
+`;
 
 export const Content = styled.p`
   color: ${({ theme }) => theme.colors.darkGrayishBlue};
   margin: 0;
   line-height: 1.6;
-  font-size: 18px;
+  font-size: 0.9375rem;
+  font-size: clamp(0.9375rem, 0.87rem + 0.29vw, 1.125rem);
 `;
 export const Button = styled.button`
   border: none;
   color: ${({ theme }) => theme.colors.offWhite};
   background-color: ${({ theme }) => theme.colors.softRed};
   letter-spacing: 3px;
-  font-size: 20px;
+  font-size: 0.875rem;
+  font-size: clamp(0.875rem, 0.74rem + 0.59vw, 1.25rem);
   padding: 16px 40px;
   margin-top: 40px;
   cursor: pointer;

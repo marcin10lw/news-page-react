@@ -8,5 +8,6 @@ export const StyledSidebar = styled.aside`
 export const Heading = styled.h2`
   color: ${({ theme }) => theme.colors.softOrange};
   margin: 0;
-  font-size: 42px;
+  font-size: 1.875rem;
+  font-size: clamp(1.875rem, 1.6rem + 1.17vw, 2.625rem);
 `;

@@ -11,7 +11,8 @@ export const StyledArticle = styled.article`
 
   p {
     color: ${({ theme }) => theme.colors.grayishBlue};
-    font-size: 18px;
+    font-size: 0.875rem;
+    font-size: clamp(0.875rem, 0.78rem + 0.39vw, 1.125rem);
     line-height: 1.6;
     margin: 20px 0 0;
   }
