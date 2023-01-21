@@ -1,11 +1,9 @@
 import { StyledSidebar, Heading } from "./styled";
 import Article from "./Article";
-import { useSelector } from "react-redux";
-import { selectArticles } from "../articlesSlice";
+import { articlesData } from "../../articlesData";
 
 const Sidebar = () => {
-  const { articles } = useSelector(selectArticles);
-  const newArticles = articles.filter((article) => article.new);
+  const newArticles = articlesData.filter((article) => article.new);
 
   return (
     <StyledSidebar>
