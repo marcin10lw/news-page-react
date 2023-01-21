@@ -37,7 +37,7 @@ export const StyledNav = styled.nav`
       ul {
         flex-direction: column;
         align-items: flex-start;
-        margin-top: 200px;
+        margin: 200px 0;
       }
 
       a {
