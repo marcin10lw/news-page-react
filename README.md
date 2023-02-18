@@ -3,6 +3,11 @@
 ## Description
 
 This time I have created a news homepage layout based on one of the numerous challenges of [Frontend Mentor](https://www.frontendmentor.io/home). This was an excellent learning opportunity.
+
+## Check out the Demo!
+
+[![](news-page-link.png)](https://marcin10lw.github.io/news-page-react/)
+
 ## Technologies used
 
     -REACT.JS
@@ -23,12 +28,7 @@ This time I have created a news homepage layout based on one of the numerous cha
 
 ![](news-page-mobile.gif)
 
- ## Check the demo out!
-
-[![](news-page-link.png)](https://marcin10lw.github.io/news-page-react/)
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
- 
 
 ## Available Scripts
 
